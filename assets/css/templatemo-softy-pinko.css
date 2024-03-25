@@ -974,6 +974,157 @@ features
   gap: 2em;
 }
 }
+
+/*---------------------------------------
+  TIMELINE              
+-----------------------------------------*/
+.timeline-section {
+  position: relative;
+}
+
+.timeline-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Color negro con opacidad del 50% */
+  
+}
+
+
+.timeline-section h2{
+  padding-top: 50px;
+}
+.timeline-section {
+  background-image: url('../images/iStock-956243400-2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+
+.timeline-container .vertical-scrollable-timeline {
+  list-style-type: none;
+  position: relative;
+  padding-left: 0;
+  
+  padding-bottom: 40px;
+  
+  
+}
+
+.timeline-container .vertical-scrollable-timeline .list-progress {
+  width: 8px;
+  height: 80%;
+  background-color: var(--color-cta);
+  position: absolute;
+  left: 52px;
+  top: 0;
+  overflow: hidden;
+  
+}
+
+.timeline-container .vertical-scrollable-timeline .list-progress .inner {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: var(--color-cta);
+  width: 100%;
+}
+
+.timeline-container .vertical-scrollable-timeline li {
+  position: relative;
+  padding: 10px 0px 65px 145px;
+}
+
+.timeline-container .vertical-scrollable-timeline li:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-container .vertical-scrollable-timeline li p {
+  line-height: 25px;
+}
+
+.timeline-container .vertical-scrollable-timeline li p:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-container .vertical-scrollable-timeline li .icon-holder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 104px;
+  height: 104px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-cuarto);
+  border-radius: 50%;
+  z-index: 1;
+  transition: 0.4s all;
+}
+
+.timeline-container .vertical-scrollable-timeline li .icon-holder::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  border: 4px solid #fff;
+  position: absolute;
+  background-color: var(--color-primario);
+  border-radius: 50%;
+  z-index: -1;
+  transition: 0.4s all;
+}
+
+.timeline-container .vertical-scrollable-timeline li .icon-holder i {
+  font-size: 25px;
+  color: var(--white-color);
+}
+
+.timeline-container .vertical-scrollable-timeline li::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 8px;
+  background-color: var(--color-primario);
+  left: 52px;
+  z-index: 0;
+}
+
+.timeline-container .vertical-scrollable-timeline li.active .icon-holder {
+  background-color: var(--color-cta);
+}
+
+.timeline-container .vertical-scrollable-timeline li.active .icon-holder::before {
+  background-color: var(--color-cta);
+}
+
+
+@media screen and (max-width: 1082px) {
+
+  .timeline-container .vertical-scrollable-timeline .list-progress {
+      height: 80%;
+  }
+
+  .timeline-container .vertical-scrollable-timeline li {
+      padding-left: 135px;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
 /* About */
 .about__title{
   font-size: 24px;
