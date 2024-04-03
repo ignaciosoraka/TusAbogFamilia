@@ -1147,7 +1147,7 @@ features
 .about__main {
   padding-top: 80px;
   display: grid;
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   gap: 1em;
   overflow: hidden;
@@ -1159,7 +1159,7 @@ features
   display: grid;
   gap: 1em;
   justify-items: center;
-  width: 250px;
+  width: 300px;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -1886,7 +1886,7 @@ footer .social li a {
 }
 
 footer .social li a:hover {
-  background-color: #ff589e;
+  background-color: #000000;
   color: #fff;
 }
 
